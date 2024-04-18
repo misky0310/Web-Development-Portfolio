@@ -5,7 +5,7 @@ import ContentWrapper from "./components/ContentWrapper/ContentWrapper"
 import Intro from "./components/Intro/Intro"
 import Education from "./components/Education/Education"
 import Navbar from "./components/navbar/Navbar"
-import SkillsComponent from "./components/Skills/Skills"
+
 
 
 function App() {
@@ -17,7 +17,6 @@ function App() {
         <Intro/>
         <About/>
         <Education/>
-        <SkillsComponent/>
         <Projects/>
         <Contact/>
       </ContentWrapper>

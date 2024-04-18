@@ -11,6 +11,9 @@ export default {
         linkYellow:'yellow',
         contactHover:'rgb(235,235,235)',
         cardBg:'rgb(54,54,54)'
+      },
+      boxShadow:{
+        glow: '0 0 30px rgba(0, 0, 255, 0.5)',
       }
     },
   },

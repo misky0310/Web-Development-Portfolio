@@ -32,7 +32,7 @@ const About = () => {
 
   return (
         <Reveal>
-            <div id="about" className='about mt-12 pt-12 w-[100%] flex flex-col items-center justify-center mb-12'>
+            <div id="about" className='about mt-12 pt-12 w-full flex flex-col items-center justify-center mb-12'>
                 <div className="topCont text-center">
                     <h2 className='heading text-6xl pb-8'>What I do</h2>
                     <p className='desc text-lg leading-10 pb-16'>I am a skilled and passionate web developer with a hunger to learn more and become an expert in creating eye-catching and user-friendly websites. I am a responsible and determined person.I have deep understanding of Figma,HTML,CSS,JavaScript and other frameworks such as ReactJS, NextJS.I can implement robust backend solutions with technologies like Node.js and MongoDB. I am particularly good in solving complex problems and find joy whenever I am tasked to tackle hard problems</p>
@@ -66,11 +66,11 @@ const About = () => {
                 </div>
 
                 <Reveal>
-                    <div className='grid grid-cols-3 mt-20 w-[80%] mx-auto'>
-                        <div className="mb-8">
-                            <h2 className="text-2xl font-bold mb-4 text-left w-[70%]">Web Development Skills</h2>
+                    <div className='grid grid-cols-3 mt-20 w-full mx-auto gap-5'>
+                        <div className="mb-8 px-5">
+                            <h2 className="text-2xl font-bold mb-4 text-center w-full">Web Development</h2>
                             <Reveal>
-                                <ul className="grid grid-cols-1 gap-4">
+                                <ul className="grid grid-cols-1 gap-4 ml-16">
                                     {webDevelopmentSkills.map((skill, index) => (
                                         <li key={index} className="flex items-center w-[100%] mx-auto">
                                         <svg className="w-7 h-5 mr-2 text-green-500 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -83,10 +83,10 @@ const About = () => {
                             </Reveal>
                         </div>
 
-                        <div>
-                            <h2 className="text-2xl font-bold mb-4 text-left w-[70%]">Software Engineering Skills</h2>
+                        <div className='mb-8 px-5'>
+                            <h2 className="text-2xl font-bold mb-4 text-center w-full">Software Engineering</h2>
                             <Reveal>
-                                <ul className="grid grid-cols-1 gap-4">
+                                <ul className="grid grid-cols-1 gap-4 ml-12">
                                     {softwareEngineeringSkills.map((skill, index) => (
                                         <li key={index} className="flex items-center ">
                                         <svg className="w-5 h-5 mr-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -98,13 +98,13 @@ const About = () => {
                                 </ul>
                             </Reveal>
                         </div>
-                        <div>
-                            <h2 className="text-2xl font-bold mb-4 text-left w-[70%] h-14">Soft Skills</h2>
+                        <div className='mb-8 px-5'>
+                            <h2 className="text-2xl font-bold mb-4 text-left w-full h-6">Soft Skills</h2>
                             <Reveal>
                                 <ul className="grid grid-cols-1 gap-4">
                                     {softSkills.map((skill, index) => (
                                         <li key={index} className="flex items-center">
-                                        <svg className="w-5 h-5 mr-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg className="w-5 h-5 mr-2 text-linkYellow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                         </svg>
                                         <span>{skill}</span>

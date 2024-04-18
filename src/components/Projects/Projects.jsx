@@ -2,19 +2,42 @@ import React from 'react'
 import ProjectCard from './ProjectCard/ProjectCard';
 
 
+const projects = [
+  {
+    title: "Project 1",
+    description: "Description of Project 1",
+    image: "project1.jpg",
+    technologies: ["React", "Node.js", "Express"],
+    year: 2022
+  },
+  {
+    title: "Project 2",
+    description: "Description of Project 2",
+    image: "project2.jpg",
+    technologies: ["Angular", "Java", "Spring Boot"],
+    year: 2021
+  },
+  {
+    title: "Project 2",
+    description: "Description of Project 2",
+    image: "project2.jpg",
+    technologies: ["Angular", "Java", "Spring Boot"],
+    year: 2021
+  },
+  // Add more project objects as needed
+];
+
 const Projects = () => {
   return (
-    <div id="projects" className="projects">
-        <div className="textCont flex flex-col items-center justify-center text-center py-20 gap-8">
+    <div id="projects" className="projects w-full">
+        <div className="textCont flex flex-col items-center justify-center text-center py-20 gap-8 w-full border">
             <h1 className='text-6xl'>My Clients</h1>
-            <p className='w-[60%] text-[1.1rem]'>I have had the opportunity to work with a diverge group of companies . Some of the notable companies I have worked with include</p>
         </div>
         <div className='grid grid-cols-3'>
-          <ProjectCard/>
-          <ProjectCard/>
-          <ProjectCard/>
-        </div>
-        
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>    
     </div>
   )
 }
