@@ -3,12 +3,17 @@ import { Link } from "react-scroll";
 import "./Navbar.css";
 import { IoMenu } from "react-icons/io5";
 import { IoIosCloseCircleOutline } from "react-icons/io";
+import contactImg from "../../../public/assets/contact.png"
 
 const Navbar = () => {
+  // State to manage the mobile menu visibility
   const [show, setShow] = useState(false);
+
   return (
     <nav className="sticky top-0 z-10 bg-background w-[100%]">
-      <div className=" navbar h-[6rem] lg:flex hidden items-center justify-between ">
+      {/* Desktop Navbar */}
+      <div className="navbar h-[6rem] lg:flex hidden items-center justify-between">
+        {/* Logo with scroll to top */}
         <Link
           to="introSection"
           spy={true}
@@ -22,6 +27,7 @@ const Navbar = () => {
           </h1>
         </Link>
 
+        {/* Links */}
         <div className="nav-links w-[20%] flex justify-between gap-10 text-lg">
           <Link
             to="introSection"
@@ -69,6 +75,7 @@ const Navbar = () => {
           </Link>
         </div>
 
+        {/* Contact Button */}
         <Link
           className="contactBtn bg-white"
           to="contact"
@@ -78,9 +85,9 @@ const Navbar = () => {
           duration={500}
           activeClass="text-black"
         >
-          {/* coontactBtn class written in index.css using apply */}
+          {/* contactBtn class written in index.css using apply */}
           <img
-            src="../../../assets/contact.png"
+            src={contactImg}
             alt=""
             className="contactPng bg-white w-4 pt-[0.2rem]"
           />
@@ -88,20 +95,25 @@ const Navbar = () => {
         </Link>
       </div>
 
+      {/* Mobile Menu Toggle Button */}
       <IoMenu
         className="w-10 h-10 absolute right-4 top-4 flex lg:hidden cursor-pointer"
         onClick={() => setShow(!show)}
       />
 
+      {/* Mobile Menu */}
       <div
-        className={`animate-open absolute right-0 top-0 h-fit w-full border bg-slate-900 flex-col p-4 transition-all   ${
+        className={`animate-open absolute right-0 top-0 h-fit w-full border bg-slate-900 flex-col p-4 transition-all ${
           show ? "flex" : "hidden"
         }`}
       >
+        {/* Close Button */}
         <IoIosCloseCircleOutline
           className="absolute top-3 right-4 h-10 w-10"
           onClick={() => setShow(!show)}
         />
+
+        {/* Mobile Menu Links */}
         <Link
           to="introSection"
           spy={true}
@@ -120,7 +132,7 @@ const Navbar = () => {
           smooth={true}
           offset={-20}
           duration={500}
-          className="listItem navLink text-white py-2 px-12 my-1hover:text-linkYellow text-center"
+          className="listItem navLink text-white py-2 px-12 my-1 hover:text-linkYellow text-center"
           activeClass="text-linkYellow"
           onClick={() => setShow(false)}
         >

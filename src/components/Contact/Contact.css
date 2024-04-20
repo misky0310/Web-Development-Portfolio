@@ -1,0 +1,85 @@
+/* Contact.css */
+.contact {
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    text-align: center;
+  }
+  
+  .textContContact {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+  
+  .textContContact h1 {
+    font-size: 3.8rem;
+  }
+  
+  .textContContact p {
+    font-size: 1.1rem;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .contactForm {
+    width: 50vw;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .inputField:focus {
+    outline: none;
+    border-color: #2563eb;
+  }
+  
+  textarea.inputField {
+    resize: vertical;
+    height: 10rem;
+  }
+  
+  .submitBtn {
+    background-color: #fff;
+    color: #000;
+    padding: 1rem 4rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .submitBtn:hover {
+    background-color: #2563eb;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .contactForm {
+      width: 80vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .textContContact h1 {
+      font-size: 2.5rem;
+    }
+  
+    .textContContact p {
+      width: 80%;
+      font-size: 0.9rem;
+    }
+  
+    .contactForm {
+      width: 100vw;
+      padding-inline: 3rem;
+    }
+  }
+  

@@ -1,7 +1,7 @@
-
 import ProjectCard from "./ProjectCard/ProjectCard";
 import Reveal from "../Reveal/Reveal";
 
+// Sample project data
 const projects = [
   {
     title: "BeyoundBoundsBlog",
@@ -46,11 +46,15 @@ const projects = [
 const Projects = () => {
   return (
     <Reveal>
+      {/* Projects Section */}
       <div id="projects" className="projects w-full">
+        {/* Section Title */}
         <div className="textCont flex flex-col items-center justify-center text-center py-10 gap-8 w-full">
           <h1 className="text-6xl">My Projects</h1>
         </div>
+        {/* Grid Layout for Project Cards */}
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 px-4">
+          {/* Mapping through projects to render Project Cards */}
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}

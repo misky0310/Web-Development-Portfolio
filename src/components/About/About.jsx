@@ -1,7 +1,10 @@
-
 import Reveal from "../Reveal/Reveal";
-
+import "./About.css"; // Import the vanilla CSS file
+import uiDesign from "../../../public/assets/ui-design.png"
+import webDevelopment from "../../../public/assets/website-design.png"
+import appDesign from "../../../public/assets/app-design.png"
 const About = () => {
+  // Arrays of skills
   const webDevelopmentSkills = [
     "HTML5",
     "CSS3",
@@ -35,9 +38,10 @@ const About = () => {
         id="about"
         className="about mt-12 px-6 pt-12 w-full flex flex-col items-center justify-center mb-12"
       >
+        {/* Top section */}
         <div className="topCont text-center">
           <h2 className="heading text-6xl pb-8">What I do</h2>
-          <p className="desc text-md lg:text-lg leading-10 pb-16 ">
+          <p className="desc text-md lg:text-lg leading-10 pb-16">
             I am a skilled and passionate web developer with a hunger to learn
             more and become an expert in creating eye-catching and user-friendly
             websites. I am a responsible and determined person.I have deep
@@ -48,12 +52,13 @@ const About = () => {
             hard problems
           </p>
         </div>
-        <div className="bottomCont flex flex-col gap-6">
-          {/* skillcard defined in index.css using apply */}
 
+        {/* Bottom section with skill cards */}
+        <div className="bottomCont flex flex-col gap-6">
+          {/* Skill card 1: UI Design */}
           <div className="skillcard m-3">
             <img
-              src="../../../assets/ui-design.png"
+              src={uiDesign}
               alt=""
               className="skillPng w-20"
             />
@@ -67,9 +72,10 @@ const About = () => {
             </div>
           </div>
 
+          {/* Skill card 2: Website Development */}
           <div className="skillcard m-3">
             <img
-              src="../../../assets/website-design.png"
+              src={webDevelopment}
               alt=""
               className="skillPng w-20"
             />
@@ -82,9 +88,10 @@ const About = () => {
             </div>
           </div>
 
+          {/* Skill card 3: App Development */}
           <div className="skillcard m-3">
             <img
-              src="../../../assets/app-design.png"
+              src={appDesign}
               alt=""
               className="skillPng w-20"
             />
@@ -99,8 +106,10 @@ const About = () => {
           </div>
         </div>
 
+        {/* Skills section with lists */}
         <Reveal>
           <div className="grid grid-cols-1 lg:grid-cols-3 mt-20 w-full mx-auto gap-5">
+            {/* Web Development Skills */}
             <div className="mb-8 px-5">
               <h2 className="text-2xl font-bold mb-4 text-center w-full">
                 Web Development
@@ -132,6 +141,7 @@ const About = () => {
               </Reveal>
             </div>
 
+            {/* Software Engineering Skills */}
             <div className="mb-8 px-5">
               <h2 className="text-2xl font-bold mb-4 text-center w-full ml-2">
                 Software Engineering
@@ -162,6 +172,8 @@ const About = () => {
                 </ul>
               </Reveal>
             </div>
+
+            {/* Soft Skills */}
             <div className="mb-8 px-5">
               <h2 className="text-2xl font-bold mb-4 text-left md:text-left md:ml-[15rem] lg:text-left ml-12 lg:ml-12 w-full">
                 Soft Skills

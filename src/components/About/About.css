@@ -1,0 +1,162 @@
+/* About.css */
+.about {
+    margin-top: 3rem;
+    padding: 0 1.5rem;
+    padding-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  
+  .topCont {
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+  
+  .desc {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+  }
+  
+  .bottomCont {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .skillcard {
+    display: flex;
+    align-items: center;
+    margin: 0.75rem;
+  }
+  
+  .skillPng {
+    width: 3rem;
+  }
+  
+  .skilltext {
+    max-width: 30rem;
+  }
+  
+  .skilltext h2 {
+    font-size: 1.5rem;
+  }
+  
+  .skilltext p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .mb-8 {
+    margin-bottom: 2rem;
+  }
+  
+  .px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .ml-2 {
+    margin-left: 0.5rem;
+  }
+  
+  .ml-12 {
+    margin-left: 3rem;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .w-20 {
+    width: 5rem;
+  }
+  
+  .w-7 {
+    width: 1.75rem;
+  }
+  
+  .h-5 {
+    height: 1.25rem;
+  }
+  
+  .text-green-500 {
+    color: #059669;
+  }
+  
+  .text-blue-500 {
+    color: #2563eb;
+  }
+  
+  .text-linkYellow {
+    color: #f6ad55;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (min-width: 640px) {
+    .grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .skilltext h2 {
+      font-size: 1.75rem;
+    }
+  
+    .skilltext p {
+      font-size: 1.125rem;
+    }
+  }
+  
